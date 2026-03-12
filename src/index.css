@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "system-ui", sans-serif;
+  --color-dark-bg: #0b0f19;
+  --color-dark-card: #151a26;
+  --color-dark-border: #1f2937;
+  --color-brand-primary: #3b82f6;
+  --color-brand-secondary: #8b5cf6;
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #94a3b8;
+}
+
+:root {
+  background-color: var(--color-dark-bg);
+  color: var(--color-text-primary);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: var(--color-brand-primary);
+  color: white;
+}
+
+/* Custom utility for glassmorphism */
+@utility glass {
+  background: rgba(21, 26, 38, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--color-dark-border);
+}
