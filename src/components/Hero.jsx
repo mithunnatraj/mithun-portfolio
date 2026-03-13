@@ -43,12 +43,12 @@ export default function Hero() {
           <div className="absolute inset-0 bg-gradient-to-tr from-blue-500 to-purple-600 rounded-3xl blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
           <div className="relative w-full h-full rounded-3xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-500 border border-gray-700/50 glass shadow-2xl">
             <img 
-              src="/src/assets/logo.png" 
+              src="./src/assets/logo.png" 
               alt="Mithun Kumar N" 
               className="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700 ease-in-out" 
               onError={(e) => {
                 e.target.onerror = null; 
-                e.target.src = "/public/logo.png";
+                e.target.src = "./public/logo.png";
               }} 
             />
           </div>
