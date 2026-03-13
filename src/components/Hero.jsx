@@ -48,7 +48,7 @@ export default function Hero() {
               className="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700 ease-in-out" 
               onError={(e) => {
                 e.target.onerror = null; 
-                e.target.src = "/src/assets/logo.png";
+                e.target.src = "/public/logo.png";
               }} 
             />
           </div>
