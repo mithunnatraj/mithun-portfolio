@@ -1,28 +1,8 @@
-# Mithun Kumar N - Professional Portfolio
+# React + Vite
 
-A professional, high-performance portfolio website built to showcase my experience as a Quality Assurance Engineer.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Features
-- **Modern Tech Stack**: Built with Vite and React.
-- **Premium Design**: Styled with Tailwind CSS v4 featuring glassmorphism, gradient text, and micro-animations.
-- **Fully Responsive**: Optimized for Desktop, Laptop, Tablet, and Mobile devices.
-- **Interactive UI**: Smooth scrolling, hover states, and dynamic component rendering.
+Currently, two official plugins are available:
 
-## Run Locally
-To run this project locally, execute the following commands in your terminal:
-
-```bash
-# Install dependencies
-npm install
-
-# Run the development server
-npm run dev
-```
-
-Visit `http://localhost:5173` in your browser.
-
-## Deployment
-This project is configured for seamless deployment on Vercel. 
-1. Push this repository to GitHub.
-2. Link the repository in your Vercel dashboard.
-3. Vercel will automatically detect the Vite framework, build, and deploy the application.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
