@@ -1,8 +1,45 @@
-# React + Vite
+# Mithun Kumar N - Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and dynamic personal portfolio built to showcase my experience, projects, skills, and expertise as a Junior QA Engineer and Salesforce Developer.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Visit my Portfolio](https://mithun-portfolio-maqdcivda.vercel.app)
+
+## 🛠️ Tech Stack
+
+This project was carefully crafted with modern web technologies:
+
+- **React 18**: Frontend UI library for building component-driven user interfaces.
+- **Vite**: Next-generation frontend tooling for blistering fast compilation and Hot Module Replacement (HMR).
+- **Tailwind CSS v4**: Utility-first CSS framework for rapid UI development, used here for custom styling, dark-mode aesthetics, glassmorphism, and responsive layouts.
+- **Vercel**: Platform for seamless deployment and hosting.
+
+## 💻 Getting Started Locally
+
+To run this project locally, follow these steps:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/mithunnatraj/mithun-portfolio.git
+   cd mithun-portfolio
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **View in the browser:**
+   Open [http://localhost:5173](http://localhost:5173) in your web browser.
+
+## 📬 Let's Connect!
+
+- [LinkedIn](https://www.linkedin.com/in/mithun-kumar-n/)
+- [Salesforce Trailblazer Profile](https://www.salesforce.com/trailblazer/mkumarn2)
+- Email: [mithunnatraj2@gmail.com](mailto:mithunnatraj2@gmail.com)
