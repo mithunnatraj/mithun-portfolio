@@ -1,12 +1,10 @@
 export default function Education() {
   const certifications = [
-    "Salesforce Developer Catalyst Plus – Apex, LWC, CRM Configuration & Best Practices (Cognizant, 2023)",
     "Cognizant ReCogNurize 2.0 – Salesforce Shaolin Certification (2022)",
     "Cybersecurity Analyst Job Simulation – TCS & Forage (2024)",
     "JavaScript Algorithms and Data Structures – freeCodeCamp (2021)",
     "Responsive Web Design – freeCodeCamp (2021)",
     "Cybersecurity Essentials – Cisco Networking Academy (2021)",
-    "Fundamentals of Digital Marketing – Google Digital Garage (2021)",
     "Finalist – Smart India Hackathon 2022",
     "Participant – Google Developer Group Cloud Community Day, Coimbatore (2022)"
   ];
