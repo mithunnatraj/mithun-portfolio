@@ -30,61 +30,59 @@ export default function Header() {
               <span className="hidden sm:inline">Trailblazer</span>
             </a>
             
-            {/* Mobile Menu Button (Three Dots) */}
+            {/* Mobile Menu Button (Hamburger) */}
             <button 
-              className="md:hidden p-2 text-gray-300 hover:text-white transition-colors ml-1"
+              className="md:hidden p-2 ml-1 text-blue-400 hover:text-blue-300 transition-colors focus:outline-none rounded-lg hover:bg-blue-900/20"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label="Toggle mobile menu"
             >
-              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                {isMobileMenuOpen ? (
-                   // Close (X) Icon
-                   <path fillRule="evenodd" d="M5.293 5.293a1 1 0 011.414 0L12 10.586l5.293-5.293a1 1 0 111.414 1.414L13.414 12l5.293 5.293a1 1 0 01-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 01-1.414-1.414L10.586 12 5.293 6.707a1 1 0 010-1.414z" clipRule="evenodd" />
-                ) : (
-                   // Three Dots (Kebab) Icon
-                   <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                )}
-              </svg>
+              <div className="relative w-6 h-5 flex flex-col justify-between items-center">
+                <span className={`block h-[2px] w-full bg-current rounded transform transition duration-300 ease-in-out origin-left ${isMobileMenuOpen ? 'rotate-45 translate-x-[2px] -translate-y-[1px]' : ''}`}></span>
+                <span className={`block h-[2px] w-full bg-current rounded transition duration-300 ease-in-out ${isMobileMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
+                <span className={`block h-[2px] w-full bg-current rounded transform transition duration-300 ease-in-out origin-left ${isMobileMenuOpen ? '-rotate-45 translate-x-[2px] translate-y-[1px]' : ''}`}></span>
+              </div>
             </button>
           </div>
         </div>
       </div>
       
-      {/* Mobile Dropdown Menu */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-16 right-0 w-full glass border-b border-[var(--color-dark-border)] shadow-xl animate-fade-in origin-top">
-          <nav className="flex flex-col px-6 py-4 space-y-4">
-            <a 
-              href="#about" 
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="block w-full text-center py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors text-base font-semibold"
-            >
-              About
-            </a>
-            <a 
-              href="#experience" 
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="block w-full text-center py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors text-base font-semibold"
-            >
-              Experience
-            </a>
-            <a 
-              href="#skills" 
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="block w-full text-center py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors text-base font-semibold"
-            >
-              Skills
-            </a>
-            <a 
-              href="#projects" 
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="block w-full text-center py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors text-base font-semibold"
-            >
-              Projects
-            </a>
-          </nav>
-        </div>
-      )}
+      {/* Mobile Dropdown Menu - Animated via CSS instead of conditional rendering */}
+      <div 
+        className={`md:hidden absolute top-16 right-0 w-full glass border-b border-[var(--color-dark-border)] shadow-xl flex flex-col transform transition-all duration-300 ease-in-out origin-top overflow-hidden ${
+          isMobileMenuOpen ? "opacity-100 scale-y-100 max-h-96 pointer-events-auto" : "opacity-0 scale-y-95 max-h-0 pointer-events-none"
+        }`}
+      >
+        <nav className="flex flex-col px-6 py-4 space-y-4">
+          <a 
+            href="#about" 
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="block w-full text-center py-2 text-gray-300 hover:text-white hover:bg-blue-500/10 hover:text-blue-400 rounded-lg transition-colors text-base font-semibold"
+          >
+            About
+          </a>
+          <a 
+            href="#experience" 
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="block w-full text-center py-2 text-gray-300 hover:text-white hover:bg-blue-500/10 hover:text-blue-400 rounded-lg transition-colors text-base font-semibold"
+          >
+            Experience
+          </a>
+          <a 
+            href="#skills" 
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="block w-full text-center py-2 text-gray-300 hover:text-white hover:bg-blue-500/10 hover:text-blue-400 rounded-lg transition-colors text-base font-semibold"
+          >
+            Skills
+          </a>
+          <a 
+            href="#projects" 
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="block w-full text-center py-2 text-gray-300 hover:text-white hover:bg-blue-500/10 hover:text-blue-400 rounded-lg transition-colors text-base font-semibold"
+          >
+            Projects
+          </a>
+        </nav>
+      </div>
     </header>
   )
 }
