@@ -1,8 +1,9 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 
 export default function ThreeBackground() {
   const mountRef = useRef(null);
+  const [requestGyro, setRequestGyro] = useState(null);
 
   useEffect(() => {
     // Setup
@@ -115,7 +116,25 @@ export default function ThreeBackground() {
          mouseY = (normalizedBeta / 45) * windowHalfY;
       }
     };
-    window.addEventListener('deviceorientation', handleDeviceOrientation, true);
+    
+    // Safely check for iOS 13+ strict privacy requirements
+    if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
+      // Create a closure that request permission and then binds the event listener
+      setRequestGyro(() => async () => {
+        try {
+          const response = await DeviceOrientationEvent.requestPermission();
+          if (response === 'granted') {
+            window.addEventListener('deviceorientation', handleDeviceOrientation, true);
+            setRequestGyro(null); // Hide the button 
+          }
+        } catch (error) {
+          console.error("Device orientation permission denied or failed:", error);
+        }
+      });
+    } else {
+      // Non-iOS 13+ devices support it natively without a user gesture
+      window.addEventListener('deviceorientation', handleDeviceOrientation, true);
+    }
 
     // --- Resize Handler ---
     const handleResize = () => {
@@ -191,5 +210,17 @@ export default function ThreeBackground() {
     };
   }, []);
 
-  return <div ref={mountRef} className="fixed inset-0 z-0 pointer-events-none" />;
+  return (
+    <>
+      <div ref={mountRef} className="fixed inset-0 z-0 pointer-events-none" />
+      {requestGyro && (
+        <button 
+           onClick={requestGyro}
+           className="fixed bottom-6 right-6 z-50 bg-blue-500/20 text-blue-300 border border-blue-500/50 px-5 py-2.5 rounded-full backdrop-blur-md text-sm font-semibold hover:bg-blue-500/30 hover:scale-105 transition-all shadow-[0_0_20px_rgba(59,130,246,0.3)] flex items-center gap-2 cursor-pointer pointer-events-auto"
+        >
+          <span>📱</span> Enable 3D Tilt
+        </button>
+      )}
+    </>
+  );
 }

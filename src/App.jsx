@@ -11,7 +11,7 @@ import ScrollReveal from './components/ScrollReveal'
 
 function App() {
   return (
-    <div className="min-h-screen bg-[var(--color-dark-bg)] text-[var(--color-text-primary)] selection:bg-brand-primary selection:text-white relative overflow-hidden">
+    <div className="min-h-[100dvh] bg-[var(--color-dark-bg)] text-[var(--color-text-primary)] selection:bg-brand-primary selection:text-white relative overflow-x-hidden">
       <ThreeBackground />
       
       {/* Background ambient light effects */}
