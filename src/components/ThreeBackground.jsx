@@ -98,6 +98,25 @@ export default function ThreeBackground() {
     };
     window.addEventListener('mousemove', handleMouseMove);
 
+    // --- Mobile Gyroscope Interaction ---
+    const handleDeviceOrientation = (event) => {
+      if (event.gamma !== null && event.beta !== null) {
+         // event.gamma is left-to-right (-90 to 90)
+         // event.beta is front-to-back (-180 to 180)
+         const gamma = event.gamma || 0;
+         const beta = event.beta || 0;
+         
+         // Assume phone is held at ~45 degrees vertically.
+         const normalizedBeta = beta - 45;
+
+         // Map the tilt angles to mock mouse coordinates for the parallax effect.
+         // Max tilt to consider is roughly 45 degrees in either direction.
+         mouseX = (gamma / 45) * windowHalfX; 
+         mouseY = (normalizedBeta / 45) * windowHalfY;
+      }
+    };
+    window.addEventListener('deviceorientation', handleDeviceOrientation, true);
+
     // --- Resize Handler ---
     const handleResize = () => {
       camera.aspect = window.innerWidth / window.innerHeight;
@@ -160,6 +179,7 @@ export default function ThreeBackground() {
     return () => {
       window.removeEventListener('resize', handleResize);
       window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('deviceorientation', handleDeviceOrientation, true);
       cancelAnimationFrame(animationId);
       if (mountRef.current && renderer.domElement) {
         mountRef.current.removeChild(renderer.domElement);
