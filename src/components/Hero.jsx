@@ -8,7 +8,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="about" className="w-full min-h-[70vh] md:min-h-[85vh] flex flex-col md:flex-row items-center justify-between gap-12 relative pt-4 md:pt-10">
+    <section id="about" className="scroll-mt-24 w-full min-h-[70vh] md:min-h-[85vh] flex flex-col md:flex-row items-center justify-between gap-12 relative pt-4 md:pt-10">
       <div className={`flex-1 transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
         <div className="inline-block mb-4 px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-sm font-semibold tracking-wide animate-pulse shadow-[0_0_15px_rgba(59,130,246,0.3)]">
           Open to new opportunities
