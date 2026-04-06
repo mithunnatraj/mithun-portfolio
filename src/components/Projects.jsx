@@ -43,7 +43,6 @@ export default function Projects() {
           Projects
           <span className="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-purple-500 rounded transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
         </h2>
-        <div className="h-1 w-20 bg-teal-500 rounded mt-1"></div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

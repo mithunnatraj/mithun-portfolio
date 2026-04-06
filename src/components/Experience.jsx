@@ -6,7 +6,6 @@ export default function Experience() {
           Work Experience
           <span className="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-purple-500 rounded transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
         </h2>
-        <div className="h-1 w-20 bg-blue-500 rounded mt-1"></div>
       </div>
       
       <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-blue-500/50 before:via-purple-500/50 before:to-transparent">

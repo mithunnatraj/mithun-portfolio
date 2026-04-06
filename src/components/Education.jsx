@@ -18,7 +18,6 @@ export default function Education() {
               Academic History
               <span className="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-purple-500 rounded transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
             </h2>
-            <div className="h-1 w-20 bg-blue-500 rounded mt-1"></div>
           </div>
           
           <div className="space-y-6">
@@ -49,7 +48,6 @@ export default function Education() {
               Certifications & Achievements
               <span className="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-purple-400 to-pink-500 rounded transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
             </h2>
-            <div className="h-1 w-20 bg-purple-500 rounded mt-1"></div>
           </div>
           
           <ul className="space-y-3 relative before:absolute before:inset-0 before:ml-[11px] before:-translate-x-px before:h-full before:w-[2px] before:bg-gradient-to-b before:from-purple-500/50 before:via-pink-500/30 before:to-transparent">
