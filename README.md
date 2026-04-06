@@ -11,8 +11,10 @@ A modern, responsive, and dynamic personal portfolio built to showcase my experi
 This project was carefully crafted with modern web technologies:
 
 - **React 18**: Frontend UI library for building component-driven user interfaces.
+- **Three.js**: Used for rendering the native 3D interactive background (starfield and dynamic geometry) with parallax capabilities without relying on heavy wrappers.
 - **Vite**: Next-generation frontend tooling for blistering fast compilation and Hot Module Replacement (HMR).
 - **Tailwind CSS v4**: Utility-first CSS framework for rapid UI development, used here for custom styling, dark-mode aesthetics, glassmorphism, and responsive layouts.
+- **Intersection Observer API**: Highly performant custom native React hooks enabling smooth, sophisticated scroll-triggered visibility animations segment by segment.
 - **Vercel**: Platform for seamless deployment and hosting.
 
 ## 💻 Getting Started Locally
