@@ -9,9 +9,6 @@ export default function ScrollReveal({ children, className = "", style = "fade-u
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-        } else {
-          // Allows the animation to trigger again when scrolling back
-          setIsVisible(false);
         }
       });
     }, {
