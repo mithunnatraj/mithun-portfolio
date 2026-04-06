@@ -1,8 +1,8 @@
+import React, { useEffect } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Experience from './components/Experience'
 import Skills from './components/Skills'
-import React from 'react'
 import Projects from './components/Projects'
 import Education from './components/Education'
 import Footer from './components/Footer'
@@ -10,6 +10,21 @@ import ThreeBackground from './components/ThreeBackground'
 import ScrollReveal from './components/ScrollReveal'
 
 function App() {
+  useEffect(() => {
+    // Prevent the browser from restoring the previous scroll position
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+    
+    // Clear any hash tags from the URL dynamically on load
+    if (window.location.hash) {
+      window.history.replaceState(null, '', window.location.pathname);
+    }
+    
+    // Explicitly force scroll to the very top
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-[100dvh] bg-[var(--color-dark-bg)] text-[var(--color-text-primary)] selection:bg-brand-primary selection:text-white relative overflow-x-hidden">
       <ThreeBackground />
