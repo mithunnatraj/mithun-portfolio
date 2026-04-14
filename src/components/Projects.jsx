@@ -45,7 +45,7 @@ export default function Projects() {
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project, idx) => (
           <div key={idx} className="glass p-8 rounded-2xl border border-gray-800 hover:border-teal-500/40 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(20,184,166,0.15)] group">
             <h3 className="text-2xl font-bold text-white mb-1 group-hover:text-teal-300 transition-colors">{project.title}</h3>

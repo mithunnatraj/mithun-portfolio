@@ -8,22 +8,22 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="about" className="scroll-mt-24 w-full min-h-[70vh] md:min-h-[85vh] flex flex-col md:flex-row items-center justify-between gap-12 relative pt-4 md:pt-10">
+    <section id="about" className="scroll-mt-24 w-full min-h-[60vh] md:min-h-[85vh] flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 relative pt-2 md:pt-10">
       <div className={`flex-1 transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-        <div className="inline-block mb-4 px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-sm font-semibold tracking-wide animate-pulse shadow-[0_0_15px_rgba(59,130,246,0.3)]">
+        <div className="mx-auto md:mx-0 block md:inline-block mb-4 px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-sm font-semibold tracking-wide animate-pulse shadow-[0_0_15px_rgba(59,130,246,0.3)] w-fit text-center">
           Open to new opportunities
         </div>
-        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+        <h1 className="text-3xl sm:text-4xl md:text-7xl font-extrabold tracking-tight mb-4 md:mb-6 leading-tight text-center md:text-left">
           Hi, I'm <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-purple-600 relative inline-block">
             Mithun Kumar N
             <span className="absolute -inset-1 blur-lg bg-gradient-to-r from-blue-400 via-purple-400 to-purple-600 opacity-30 select-none"></span>
           </span>
         </h1>
-        <h2 className="text-2xl md:text-3xl text-gray-300 font-semibold mb-8">
+        <h2 className="text-xl md:text-3xl text-gray-300 font-semibold mb-4 md:mb-8 text-center md:text-left">
           Junior QA Engineer
         </h2>
-        <p className="text-lg text-gray-400 max-w-2xl leading-relaxed mb-10">
+        <p className="text-base md:text-lg text-gray-400 max-w-2xl leading-relaxed mb-6 md:mb-10 text-center md:text-left">
           Junior QA Engineer and Salesforce Developer with experience in manual and automated testing, API validation, defect management, and Salesforce CRM development. Skilled in Playwright, Postman, JIRA, BDD (Gherkin/Cucumber), Apex, SOQL, and Lightning Web Components (LWC). Adept at collaborating in Agile/Scrum environments to deliver reliable, high-quality software across web platforms.
         </p>
         <div className="flex flex-col sm:flex-row flex-wrap gap-4 w-full sm:w-auto">

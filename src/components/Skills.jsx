@@ -35,7 +35,7 @@ export default function Skills() {
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {skillCategories.map((category, idx) => (
           <div key={idx} className="glass p-6 rounded-2xl hover:bg-white/[0.04] transition-all duration-300 border border-gray-800/50 hover:border-purple-500/30 hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:-translate-y-1 group">
             <h3 className="text-xl font-bold text-white mb-5 group-hover:text-purple-300 transition-colors">{category.title}</h3>
