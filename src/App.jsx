@@ -35,7 +35,7 @@ function App() {
       
       <Header />
       
-      <main className="relative z-10 flex flex-col items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 md:pt-24 pb-12 gap-8 md:gap-20 w-full">
+      <main className="relative z-10 flex flex-col items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 md:pt-24 pb-12 gap-8 md:gap-20 w-full">
         <Hero />
         
         <ScrollReveal style="fade-up">
