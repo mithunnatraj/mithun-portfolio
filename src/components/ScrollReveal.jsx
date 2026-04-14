@@ -12,8 +12,8 @@ export default function ScrollReveal({ children, className = "", style = "fade-u
         }
       });
     }, {
-      threshold: 0.1,
-      rootMargin: "0px 0px -5% 0px"
+      threshold: 0.02, // Trigger earlier (2% visibility)
+      rootMargin: "0px 0px 0px 0px" // Trigger as soon as it touches the viewport
     });
 
     const currentRef = domRef.current;
@@ -27,16 +27,14 @@ export default function ScrollReveal({ children, className = "", style = "fade-u
   const baseStyles = "transition-all duration-1000 ease-out w-full";
   let variants = "";
   
-  // Use smaller translation distances on mobile to prevent layout breaking or harsh jumps, 
-  // and larger elegant distances on md (tablet/laptop) and above.
   if (style === "fade-up") {
-    variants = isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12 md:translate-y-24";
+    variants = isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 md:translate-y-24";
   } else if (style === "fade-left") {
-    variants = isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12 md:-translate-x-24";
+    variants = isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10 md:-translate-x-24";
   } else if (style === "fade-right") {
-    variants = isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12 md:translate-x-24";
+    variants = isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10 md:translate-x-24";
   } else if (style === "scale") {
-    variants = isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95 md:scale-90";
+    variants = isVisible ? "opacity-100 scale-100" : "opacity-0 scale-98 md:scale-90";
   }
 
   return (

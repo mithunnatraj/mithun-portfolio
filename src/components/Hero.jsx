@@ -24,7 +24,7 @@ export default function Hero() {
           Junior QA Engineer
         </h2>
         <p className="text-lg text-gray-400 max-w-2xl leading-relaxed mb-10">
-          Junior QA Engineer & Salesforce Developer with expertise in manual and automated testing, API validation, and Salesforce CRM development. Skilled in Playwright, automation, and Agile methodologies to deliver reliable, high-quality software.
+          Junior QA Engineer and Salesforce Developer with experience in manual and automated testing, API validation, defect management, and Salesforce CRM development. Skilled in Playwright, Postman, JIRA, BDD (Gherkin/Cucumber), Apex, SOQL, and Lightning Web Components (LWC). Adept at collaborating in Agile/Scrum environments to deliver reliable, high-quality software across web platforms.
         </p>
         <div className="flex flex-col sm:flex-row flex-wrap gap-4 w-full sm:w-auto">
           <a href="#experience" className="px-8 py-3.5 rounded-xl bg-white text-black font-bold hover:bg-gray-200 hover:scale-105 transition-all shadow-[0_0_20px_rgba(255,255,255,0.2)] w-full sm:w-auto text-center flex justify-center items-center">
