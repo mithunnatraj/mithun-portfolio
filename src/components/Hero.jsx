@@ -42,12 +42,6 @@ export default function Hero() {
             </svg>
             Trailblazer
           </a>
-          <a href="/resume.pdf" download className="w-full sm:w-auto px-8 py-3.5 rounded-xl border border-gray-600 hover:border-blue-400 hover:text-blue-400 hover:bg-blue-500/10 hover:scale-105 text-white font-bold transition-all flex items-center justify-center gap-2 group hover:shadow-[0_0_15px_rgba(59,130,246,0.3)]">
-            <svg className="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-            Resume
-          </a>
         </div>
       </div>
       
