@@ -9,20 +9,24 @@ export default function Skills() {
       skills: ["JIRA", "Postman", "Playwright", "Cucumber", "Gherkin", "BDD Framework"]
     },
     {
-      title: "Salesforce",
-      skills: ["Apex", "SOQL", "Lightning Web Components (LWC)", "Salesforce CRM", "Process Builder", "Workflow Automation", "Custom Objects", "Validation Rules", "Role Hierarchy", "Profiles", "Permission Sets"]
+      title: "SDLC / STLC",
+      skills: ["Software Development Life Cycle (SDLC)", "Software Testing Life Cycle (STLC)", "Agile", "Scrum"]
     },
     {
       title: "Test Artifacts",
-      skills: ["Test Plan", "Test Cases", "Test Scripts", "Test Summary Report", "RTM"]
+      skills: ["Test Plan", "Test Cases", "Test Scripts", "Test Summary Report", "Requirements Traceability Matrix (RTM)"]
+    },
+    {
+      title: "Salesforce",
+      skills: ["Apex", "SOQL", "Lightning Web Components (LWC)", "Salesforce CRM", "Process Builder", "Workflow Automation", "Custom Objects", "Validation Rules", "Role Hierarchy", "Profiles", "Permission Sets"]
     },
     {
       title: "Programming",
       skills: ["JavaScript", "SQL", "HTML5", "CSS3", "Bootstrap", "Git", "Unix/Linux"]
     },
     {
-      title: "SDLC & Platforms",
-      skills: ["SDLC", "STLC", "Agile", "Scrum", "IBM Cloud", "Web Applications", "Google Sheets (ChartApps)"]
+      title: "Platforms",
+      skills: ["IBM Cloud", "Web Applications", "Google Sheets (ChartApps)"]
     }
   ];
 

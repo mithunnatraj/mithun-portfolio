@@ -5,8 +5,8 @@ export default function Projects() {
       role: "QA Automation",
       tech: ["Playwright", "JIRA", "Google Sheets API", "Cross-Browser Testing"],
       points: [
-        "Tested functional, regression, and UI aspects of a Google Sheets-based no-code dashboard platform; validated real-time data sync, chart rendering, filter logic, and cross-browser compatibility using Playwright automation.",
-        "Reported and tracked UI and data inconsistencies in JIRA; re-verified fixes across multiple browser environments post-release."
+        "Performed functional, regression, and UI testing on a Google Sheets-based dashboard platform; validated real-time data sync, chart rendering, and filter logic.",
+        "Authored BDD feature files in Gherkin using Cucumber; reported and tracked UI and data inconsistencies in JIRA with post-fix verification."
       ]
     },
     {
@@ -14,8 +14,8 @@ export default function Projects() {
       role: "E2E Testing",
       tech: ["Playwright", "RBAC", "JIRA", "E2E Testing"],
       points: [
-        "Executed E2E testing of task workflows, user role permissions (RBAC), and dashboard reporting; automated regression suite with Playwright and managed defects through JIRA.",
-        "Verified notification triggers, status transitions, and audit logs for task lifecycle management workflows."
+        "Practicing E2E testing of task workflows, RBAC permissions, and dashboard reporting using Playwright; automated regression suite and managed all defects through JIRA.",
+        "Wrote Gherkin feature files using Cucumber BDD framework; verified notification triggers, status transitions, and audit logs for task lifecycle management."
       ]
     },
     {

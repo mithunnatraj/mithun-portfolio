@@ -25,14 +25,14 @@ export default function Experience() {
             </div>
             <div className="text-gray-300 font-semibold mb-4 text-sm uppercase tracking-wider">Objectways Technologies</div>
             <ul className="list-disc list-outside ml-4 text-sm text-gray-400 space-y-2.5 leading-relaxed group-hover:text-gray-300 transition-colors">
-              <li>Performed functional, regression, smoke, sanity, and API testing on web and no-code platforms including ChartApps (Google Sheets dashboard builder).</li>
+              <li>Performed functional, regression, smoke, sanity, and API testing on ChartApps (a Google Sheets-based no-code dashboard builder) and an Internal Project Management Tool, covering charts, filters, task workflows, and RBAC permissions.</li>
               <li>Designed and maintained test cases, test plans, and RTM aligned with user stories and acceptance criteria; logged and tracked defects end-to-end in JIRA with root cause analysis.</li>
-              <li>Conducted API testing using Postman to validate REST endpoints, request/response payloads, HTTP status codes, authentication, and data integrity.</li>
-              <li>Automated E2E and regression test suites using Playwright (JavaScript); performed cross-browser testing across Chromium, Firefox, and WebKit.</li>
+              <li>Practicing API testing using Postman to validate REST endpoints, request/response payloads, HTTP status codes, authentication, and data integrity.</li>
+              <li>Practicing E2E and regression test suites for the Internal Project Management Tool using Playwright (JavaScript); performed cross-browser testing across Chromium, Firefox, and WebKit.</li>
               <li>Implemented visual regression testing using Playwright screenshot comparisons to catch unintended UI changes between releases.</li>
-              <li>Authored Gherkin feature files and acceptance criteria using the Cucumber BDD framework.</li>
+              <li>Contributed to BDD by authoring Gherkin feature files and acceptance criteria using the Cucumber framework for both ChartApps and the Internal Project Management Tool.</li>
               <li>Participated in Agile/Scrum ceremonies including sprint planning and retrospectives; prepared test summary reports each release cycle.</li>
-              <li>Validated RBAC permissions, task workflows, and reporting dashboards for an internal project management tool through comprehensive E2E testing.</li>
+              <li>Validated notification triggers, status transitions, audit logs, and real-time data sync across both projects through structured E2E testing.</li>
             </ul>
           </div>
         </div>
