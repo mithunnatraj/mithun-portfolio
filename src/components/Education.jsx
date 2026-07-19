@@ -11,7 +11,7 @@ export default function Education() {
   ];
 
   return (
-    <section id="education" className="scroll-mt-24 w-full">
+    <section className="w-full">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
         <div>
           <div className="mb-10">

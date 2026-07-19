@@ -24,7 +24,7 @@ export default function Hero() {
           Junior QA Engineer
         </h2>
         <p className="text-base md:text-lg text-gray-400 max-w-2xl leading-relaxed mb-4 md:mb-8 text-center md:text-left">
-          Junior QA Engineer and Salesforce Developer with experience in manual and automated testing, API validation, defect management, and Salesforce CRM development. Skilled in Playwright, Postman, JIRA, BDD (Gherkin/Cucumber), Apex, SOQL, and Lightning Web Components (LWC). Adept at collaborating in Agile/Scrum environments to deliver reliable, high-quality software across web platforms.
+          Detail-oriented Junior QA Engineer with hands-on experience in functional, regression, smoke, and sanity testing across web and no-code platforms. Familiar with API testing using Postman and actively learning test automation with Playwright and BDD (Gherkin/Cucumber). Backed by Salesforce development exposure in Apex, SOQL, and Lightning Web Components (LWC), bringing a well-rounded perspective to quality assurance and software delivery in Agile/Scrum environments.
         </p>
         <div className="flex flex-col sm:flex-row flex-wrap gap-4 w-full sm:w-auto">
           <a href="#experience" className="px-8 py-3.5 rounded-xl bg-white text-black font-bold hover:bg-gray-200 hover:scale-105 transition-all shadow-[0_0_20px_rgba(255,255,255,0.2)] w-full sm:w-auto text-center flex justify-center items-center">

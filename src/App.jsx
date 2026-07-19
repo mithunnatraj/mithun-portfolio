@@ -38,21 +38,29 @@ function App() {
       <main className="relative z-10 flex flex-col items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 md:pt-20 pb-12 gap-8 md:gap-20 w-full">
         <Hero />
         
-        <ScrollReveal style="fade-up">
-          <Experience />
-        </ScrollReveal>
+        <div id="experience" className="w-full">
+          <ScrollReveal style="fade-up">
+            <Experience />
+          </ScrollReveal>
+        </div>
         
-        <ScrollReveal style="scale">
-          <Skills />
-        </ScrollReveal>
+        <div id="skills" className="w-full">
+          <ScrollReveal style="scale">
+            <Skills />
+          </ScrollReveal>
+        </div>
         
-        <ScrollReveal style="fade-left">
-          <Projects />
-        </ScrollReveal>
+        <div id="projects" className="w-full">
+          <ScrollReveal style="fade-left">
+            <Projects />
+          </ScrollReveal>
+        </div>
         
-        <ScrollReveal style="fade-right">
-          <Education />
-        </ScrollReveal>
+        <div id="education" className="w-full">
+          <ScrollReveal style="fade-right">
+            <Education />
+          </ScrollReveal>
+        </div>
       </main>
 
       <Footer />

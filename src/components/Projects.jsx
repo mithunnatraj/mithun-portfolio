@@ -1,35 +1,53 @@
 export default function Projects() {
   const projects = [
     {
-      title: "ChartApps – No-Code Dashboard Builder",
-      role: "QA Automation",
-      tech: ["Playwright", "JIRA", "Google Sheets API", "Cross-Browser Testing"],
+      title: "Internal People Management Tool",
+      role: "E2E Testing & Defect Management",
+      tech: ["Playwright", "Cucumber", "BDD", "JIRA", "RBAC"],
       points: [
-        "Performed functional, regression, and UI testing on a Google Sheets-based dashboard platform; validated real-time data sync, chart rendering, and filter logic.",
-        "Authored BDD feature files in Gherkin using Cucumber; reported and tracked UI and data inconsistencies in JIRA with post-fix verification."
-      ]
-    },
-    {
-      title: "Internal Project Management Tool",
-      role: "E2E Testing",
-      tech: ["Playwright", "RBAC", "JIRA", "E2E Testing"],
-      points: [
-        "Practicing E2E testing of task workflows, RBAC permissions, and dashboard reporting using Playwright; automated regression suite and managed all defects through JIRA.",
+        "Practiced E2E testing of task workflows, RBAC permissions, and dashboard reporting using Playwright; supported regression suite and managed defects through JIRA.",
         "Wrote Gherkin feature files using Cucumber BDD framework; verified notification triggers, status transitions, and audit logs for task lifecycle management."
       ]
     },
     {
+      title: "ChartApps – No-Code Dashboard Builder",
+      role: "Functional & Regression Testing",
+      tech: ["Functional Testing", "UI Testing", "Cucumber", "JIRA", "Sheets API"],
+      points: [
+        "Performed functional, regression, and UI testing on a Google Sheets-based dashboard platform; validated real-time data sync, chart rendering, and filter logic across browsers.",
+        "Authored BDD feature files in Gherkin using Cucumber; tracked UI and data inconsistencies in JIRA with post-fix verification."
+      ]
+    },
+    {
+      title: "OW Recorder – Egocentric Robotic Training App",
+      role: "Functional & Regression Testing",
+      tech: ["Functional Testing", "Regression Testing", "JIRA", "Cross-Device"],
+      points: [
+        "Performed functional and regression testing on the OW Recorder app used for egocentric robotic training data collection; validated recording workflows, data capture accuracy, and session management.",
+        "Tested app behavior across devices and environments; reported and tracked defects in JIRA and verified fixes through structured re-testing cycles."
+      ]
+    },
+    {
+      title: "Objectways Website Testing",
+      role: "UI/UX & Content Consistency Testing",
+      tech: ["UI/UX Testing", "Cross-Browser Testing", "Content Consistency", "Responsive Web Design"],
+      points: [
+        "Conducted UI/UX, content consistency, and cross-browser testing on the Objectways company website; validated navigation flows, page responsiveness, and rendering across Chromium, Firefox, and WebKit.",
+        "Identified and reported layout inconsistencies and broken links; verified content accuracy and ensured brand consistency across all pages."
+      ]
+    },
+    {
       title: "Plasma Donor Web Application",
-      role: "Full Stack & Testing",
-      tech: ["HTML/CSS/JS", "Python", "IBM Cloud"],
+      role: "Full Stack Development & Testing",
+      tech: ["HTML/CSS/JS", "Python", "IBM Cloud", "Testing"],
       points: [
         "Built and tested a donation management web app using HTML, CSS, JavaScript, Python, and IBM Cloud; authored test cases for form validation and cloud integration."
       ]
     },
     {
       title: "Rescue Team Health Monitoring System",
-      role: "Smart India Hackathon Finalist '22",
-      tech: ["LoRa", "IoT", "Real-Time Dashboard"],
+      role: "Smart India Hackathon Finalist",
+      tech: ["LoRa", "IoT", "Real-Time Dashboard", "E2E Testing"],
       points: [
         "Designed a LoRa-based health and location monitoring prototype; contributed to E2E testing of the real-time web and mobile dashboard."
       ]
@@ -37,7 +55,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="scroll-mt-24 w-full">
+    <section className="w-full">
       <div className="mb-12">
         <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500 mb-4 inline-block relative group cursor-default">
           Projects

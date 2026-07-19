@@ -1,6 +1,6 @@
 export default function Experience() {
   return (
-    <section id="experience" className="scroll-mt-24 w-full">
+    <section className="w-full">
       <div className="mb-12">
         <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500 mb-4 inline-block relative group cursor-default">
           Work Experience
