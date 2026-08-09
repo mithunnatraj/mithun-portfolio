@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useEffect, useRef, useState } from 'react';
 
 export default function ScrollReveal({ children, className = "", style = "fade-up", delay = 0 }) {
@@ -7,9 +8,7 @@ export default function ScrollReveal({ children, className = "", style = "fade-u
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
+        setIsVisible(entry.isIntersecting);
       });
     }, {
       threshold: 0.02, // Trigger earlier (2% visibility)
