@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -9,66 +9,6 @@ export default function Contact() {
   });
   const [status, setStatus] = useState('idle'); // idle, loading, success, error
   const [errorMessage, setErrorMessage] = useState('');
-  const [turnstileToken, setTurnstileToken] = useState('');
-  const turnstileContainerRef = useRef(null);
-  const widgetIdRef = useRef(null);
-
-  useEffect(() => {
-    const loadTurnstile = () => {
-      if (window.turnstile) {
-        renderWidget();
-        return;
-      }
-
-      // Add Turnstile script tag to the DOM
-      const script = document.createElement('script');
-      script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
-      script.async = true;
-      script.defer = true;
-      script.id = 'cloudflare-turnstile-script';
-      document.body.appendChild(script);
-
-      script.onload = () => {
-        renderWidget();
-      };
-    };
-
-    const renderWidget = () => {
-      const sitekey = import.meta.env.VITE_TURNSTILE_SITEKEY;
-      if (!sitekey || sitekey === 'your-cloudflare-turnstile-sitekey-here') {
-        console.warn('VITE_TURNSTILE_SITEKEY is missing or configured as placeholder.');
-        return;
-      }
-
-      if (window.turnstile && turnstileContainerRef.current) {
-        try {
-          widgetIdRef.current = window.turnstile.render(turnstileContainerRef.current, {
-            sitekey: sitekey,
-            theme: 'dark',
-            callback: (token) => {
-              setTurnstileToken(token);
-            },
-            'expired-callback': () => {
-              setTurnstileToken('');
-            },
-            'error-callback': () => {
-              setTurnstileToken('');
-            },
-          });
-        } catch (err) {
-          console.error('Failed to render Turnstile widget:', err);
-        }
-      }
-    };
-
-    loadTurnstile();
-
-    return () => {
-      if (window.turnstile && widgetIdRef.current !== null) {
-        window.turnstile.remove(widgetIdRef.current);
-      }
-    };
-  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -83,12 +23,6 @@ export default function Contact() {
       return;
     }
 
-    if (!turnstileToken) {
-      setStatus('error');
-      setErrorMessage('Please complete the security check verification.');
-      return;
-    }
-
     setStatus('loading');
     setErrorMessage('');
 
@@ -98,7 +32,7 @@ export default function Contact() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ ...formData, turnstileToken }),
+        body: JSON.stringify(formData),
       });
 
       const data = await response.json();
@@ -106,26 +40,14 @@ export default function Contact() {
       if (response.ok && data.success) {
         setStatus('success');
         setFormData({ name: '', email: '', subject: '', message: '' });
-        setTurnstileToken('');
-        if (window.turnstile && widgetIdRef.current !== null) {
-          window.turnstile.reset(widgetIdRef.current);
-        }
       } else {
         setStatus('error');
         setErrorMessage(data.error || 'Something went wrong. Please try again later.');
-        if (window.turnstile && widgetIdRef.current !== null) {
-          window.turnstile.reset(widgetIdRef.current);
-          setTurnstileToken('');
-        }
       }
     } catch (err) {
       console.error('Contact Form Error:', err);
       setStatus('error');
       setErrorMessage('Network error. Please check your connection and try again.');
-      if (window.turnstile && widgetIdRef.current !== null) {
-        window.turnstile.reset(widgetIdRef.current);
-        setTurnstileToken('');
-      }
     }
   };
 
@@ -270,11 +192,6 @@ export default function Contact() {
                 className="px-4 py-3 bg-[var(--color-dark-bg)]/85 text-white border border-gray-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 transition-all resize-none"
                 disabled={status === 'loading'}
               />
-            </div>
-
-            {/* Turnstile Verification Widget */}
-            <div className="flex justify-center w-full min-h-[65px] my-2">
-              <div ref={turnstileContainerRef} id="cf-turnstile"></div>
             </div>
 
             {/* Status alerts */}
