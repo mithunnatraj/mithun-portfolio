@@ -34,11 +34,47 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: 'Email notification service is not configured on the server.' });
   }
 
-  const { name, email, subject, message } = req.body;
+  const { name, email, subject, message, turnstileToken } = req.body;
 
   // Input validation
   if (!name || !email || !message) {
     return res.status(400).json({ error: 'Name, email, and message are required fields.' });
+  }
+
+  // Validate Turnstile token
+  const turnstileSecret = process.env.TURNSTILE_SECRET_KEY;
+  if (!turnstileSecret || turnstileSecret === 'your-cloudflare-turnstile-secretkey-here') {
+    console.error('Cloudflare Turnstile Secret Key is missing in environment variables.');
+    return res.status(500).json({ error: 'Security verification service is not configured on the server.' });
+  }
+
+  if (!turnstileToken) {
+    return res.status(400).json({ error: 'Security check token is missing. Please refresh and try again.' });
+  }
+
+  try {
+    // Verify token with Cloudflare API
+    const verifyResponse = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: new URLSearchParams({
+        secret: turnstileSecret,
+        response: turnstileToken,
+        remoteip: req.headers['x-forwarded-for'] || req.socket.remoteAddress,
+      }),
+    });
+
+    const verifyData = await verifyResponse.json();
+
+    if (!verifyData.success) {
+      console.warn('Cloudflare Turnstile verification failed:', verifyData['error-codes']);
+      return res.status(403).json({ error: 'Security verification failed. Please try again.' });
+    }
+  } catch (err) {
+    console.error('Cloudflare Turnstile API Request failed:', err);
+    return res.status(500).json({ error: 'Failed to verify security check with Cloudflare. Please try again.' });
   }
 
   try {
