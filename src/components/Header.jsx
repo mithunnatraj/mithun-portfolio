@@ -15,6 +15,7 @@ export default function Header() {
             <a href="#experience" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">Experience</a>
             <a href="#skills" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">Skills</a>
             <a href="#projects" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">Projects</a>
+            <a href="#contact" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">Contact</a>
           </nav>
           <div className="flex items-center gap-2 sm:gap-3 shrink-0 ml-2">
             <a href="https://www.linkedin.com/in/mithun-kumar-n/" target="_blank" rel="noopener noreferrer" className="p-2 sm:px-4 sm:py-2 rounded-lg bg-blue-600/20 text-blue-400 border border-blue-500/30 hover:bg-blue-600 hover:text-white text-sm font-semibold transition-colors flex items-center gap-1.5 sm:gap-2">
@@ -80,6 +81,13 @@ export default function Header() {
             className="block w-full text-center py-2 text-gray-300 hover:text-white hover:bg-blue-500/10 hover:text-blue-400 rounded-lg transition-colors text-base font-semibold"
           >
             Projects
+          </a>
+          <a 
+            href="#contact" 
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="block w-full text-center py-2 text-gray-300 hover:text-white hover:bg-blue-500/10 hover:text-blue-400 rounded-lg transition-colors text-base font-semibold"
+          >
+            Contact
           </a>
         </nav>
       </div>

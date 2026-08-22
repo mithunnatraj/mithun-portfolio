@@ -7,6 +7,7 @@ import Experience from './components/Experience'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Education from './components/Education'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ThreeBackground from './components/ThreeBackground'
 import ScrollReveal from './components/ScrollReveal'
@@ -61,6 +62,12 @@ function App() {
         <div id="education" className="w-full">
           <ScrollReveal style="fade-right">
             <Education />
+          </ScrollReveal>
+        </div>
+
+        <div id="contact" className="w-full">
+          <ScrollReveal style="fade-up">
+            <Contact />
           </ScrollReveal>
         </div>
       </main>
