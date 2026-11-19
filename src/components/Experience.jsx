@@ -7,9 +7,9 @@ export default function Experience() {
           <span className="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-purple-500 rounded transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
         </h2>
       </div>
-      
+
       <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-blue-500/50 before:via-purple-500/50 before:to-transparent">
-        
+
         {/* Junior QA Engineer */}
         <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
           <div className="flex items-center justify-center w-10 h-10 rounded-full border border-blue-500/50 bg-[var(--color-dark-card)] text-blue-400 shadow-[0_0_15px_rgba(59,130,246,0.3)] shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 transition-all duration-300 hover:scale-125 hover:bg-blue-500/10">
@@ -17,22 +17,23 @@ export default function Experience() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
           </div>
-          
+
           <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass p-6 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-all duration-300 shadow-lg hover:shadow-[0_0_30px_rgba(59,130,246,0.15)] hover:-translate-y-1">
             <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
               <h3 className="font-bold text-xl text-white group-hover:text-blue-300 transition-colors">Junior QA Engineer</h3>
-              <span className="text-sm font-medium px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full border border-blue-500/20 mt-2 md:mt-0 inline-block">Mar 2024 - Present</span>
+              <span className="text-sm font-medium px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full border border-blue-500/20 mt-2 md:mt-0 inline-block">Mar 2024 – Nov 2026</span>
             </div>
             <div className="text-gray-300 font-semibold mb-4 text-sm uppercase tracking-wider">Objectways Technologies</div>
             <ul className="list-disc list-outside ml-4 text-sm text-gray-400 space-y-2.5 leading-relaxed group-hover:text-gray-300 transition-colors">
-              <li>Performed functional, regression, smoke, and sanity testing across multiple products - ChartApps (Google Sheets-based no-code dashboard builder), Internal People Management Tool, OW Recorder app (Egocentric robotic training data collection), and the Objectways company website.</li>
-              <li>Designed and maintained test cases, test plans, and RTM aligned with user stories and acceptance criteria; logged and tracked defects end-to-end in JIRA with root cause analysis.</li>
-              <li>Gaining hands-on exposure to API testing using Postman - learning to validate REST endpoints, request/response payloads, HTTP status codes, and data integrity.</li>
-              <li>Learning and practicing E2E test automation using Playwright (JavaScript) for the Internal People Management Tool; exploring cross-browser testing across Chromium, Firefox, and WebKit.</li>
-              <li>Exploring visual regression testing using Playwright screenshot comparisons to identify unintended UI changes between releases.</li>
-              <li>Contributing to BDD by authoring Gherkin feature files and acceptance criteria using the Cucumber framework for ChartApps and the Internal People Management Tool.</li>
-              <li>Performed UI/UX and content consistency testing on the Objectways website; validated navigation flows, responsiveness, and cross-browser rendering.</li>
-              <li>Participated in Agile/Scrum ceremonies; prepared test summary reports and validated notification triggers, status transitions, and audit logs through structured testing.</li>
+              <li>Performed functional, regression, smoke, and sanity testing across multiple products, including ChartApps (a Google Sheets-based dashboard builder), the Internal People Management Tool, the OW Recorder app, and the Objectways, ChartApps, and Liceum websites.</li>
+              <li>Analyzed user stories and acceptance criteria to design test scenarios and test cases using black-box testing techniques, ensuring comprehensive requirement coverage.</li>
+              <li>Logged, tracked, and retested over 300 defects in Jira throughout the defect life cycle, providing clear reproduction steps, priority levels, and root cause findings during defect triage discussions.</li>
+              <li>Executed over 200 test scenarios and conducted exploratory testing as part of end-to-end and regression test cycles before releases, delivering detailed test summary reports to stakeholders.</li>
+              <li>Validated role-based access control, task workflows, status transitions, notification triggers, and audit logs in the Internal People Management Tool.</li>
+              <li>Wrote detailed defect reports that included steps to reproduce, expected and actual results, priority levels, and supporting evidence to help developers resolve issues efficiently.</li>
+              <li>Tested dashboard data sync, chart rendering, and filter logic in ChartApps across Chrome and Firefox.</li>
+              <li>Performed UI/UX, content consistency, navigation, and responsiveness testing on the websites.</li>
+              <li>Participated in Agile/Scrum ceremonies, including sprint planning, backlog refinement, and retrospectives; worked closely with developers and product owners to clarify requirements and resolve defects.</li>
             </ul>
           </div>
         </div>
@@ -44,19 +45,17 @@ export default function Experience() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
             </svg>
           </div>
-          
+
           <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass p-6 rounded-2xl border border-gray-800 hover:border-purple-500/50 transition-all duration-300 shadow-lg hover:shadow-[0_0_30px_rgba(168,85,247,0.15)] hover:-translate-y-1">
             <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
               <h3 className="font-bold text-xl text-white group-hover:text-purple-300 transition-colors">Programmer Analyst Trainee</h3>
-              <span className="text-sm font-medium px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full border border-purple-500/20 mt-2 md:mt-0 inline-block">Oct 2023 - Dec 2023</span>
+              <span className="text-sm font-medium px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full border border-purple-500/20 mt-2 md:mt-0 inline-block">Oct 2023 – Dec 2023</span>
             </div>
             <div className="text-gray-300 font-semibold mb-4 text-sm uppercase tracking-wider">Cognizant Technology Solutions</div>
             <ul className="list-disc list-outside ml-4 text-sm text-gray-400 space-y-2.5 leading-relaxed group-hover:text-gray-300 transition-colors">
-              <li>Developed Salesforce CRM applications using Apex classes and triggers, SOQL queries, and Lightning Web Components (LWC) to deliver scalable business solutions.</li>
-              <li>Configured Process Builder, Workflow Rules, custom objects, fields, page layouts, and validation rules to meet client-specific business requirements.</li>
-              <li>Administered Salesforce security model including role hierarchy, profiles, and permission sets to control user access and enforce data visibility.</li>
-              <li>Built and tested responsive web interfaces using HTML5, CSS3, JavaScript, and Bootstrap; performed data validation using SOQL and MySQL.</li>
-              <li>Debugged Salesforce workflows, Apex logic, and UI components; completed the Salesforce Developer Catalyst Plus certification program.</li>
+              <li>Designed, developed, and deployed custom Salesforce CRM features using Apex, SOQL, and Lightning Web Components (LWC) to enhance core business functionality.</li>
+              <li>Executed complex data validation, debugged backend Apex logic, and optimized automated workflows and trigger implementations to maintain high system reliability.</li>
+              <li>Completed the Salesforce Developer Catalyst Plus certification program.</li>
             </ul>
           </div>
         </div>

@@ -2,54 +2,53 @@ export default function Projects() {
   const projects = [
     {
       title: "Internal People Management Tool",
-      role: "Objectways Technologies | Mar 2024 – Present",
-      tech: ["Playwright", "Cucumber", "BDD", "JIRA", "RBAC"],
+      role: "Objectways Technologies | Mar 2024 – Nov 2026",
+      tech: ["Playwright", "Postman", "RBAC", "Jira", "API Testing"],
       points: [
-        "Practiced E2E testing of task workflows, RBAC permissions, and dashboard reporting using Playwright; supported regression suite and managed defects through JIRA.",
-        "Wrote Gherkin feature files using Cucumber BDD framework; verified notification triggers, status transitions, and audit logs for task lifecycle management."
+        "Tested task workflows, role-based access control (RBAC) permissions, dashboard reports, notifications, and audit logs; supported regression suite execution and defect tracking in Jira.",
+        "Developing practical skills in Playwright with JavaScript for selected end-to-end test scenarios and in API testing using Postman to validate HTTP response status codes."
       ]
     },
     {
       title: "ChartApps – No-Code Dashboard Builder",
-      role: "Objectways Technologies | Mar 2024 – Present",
-      tech: ["Functional Testing", "UI Testing", "Cucumber", "JIRA", "Sheets API"],
+      role: "Objectways Technologies | Mar 2024 – Mar 2026",
+      tech: ["Functional Testing", "Regression Testing", "UI Testing", "Jira", "Cross-Browser"],
       points: [
-        "Performed functional, regression, and UI testing on a Google Sheets-based dashboard platform; validated real-time data sync, chart rendering, and filter logic across browsers.",
-        "Authored BDD feature files in Gherkin using Cucumber; tracked UI and data inconsistencies in JIRA with post-fix verification."
+        "Performed functional, regression, and UI testing of a Google Sheets-based dashboard platform, validating real-time data sync, chart rendering, and filters across browsers.",
+        "Tracked UI and data-related defects in Jira and verified fixes through retesting."
       ]
     },
     {
-      title: "OW Recorder – Egocentric Robotic Training App",
-      role: "Objectways Technologies | Mar 2024 – Present",
-      tech: ["Functional Testing", "Regression Testing", "JIRA", "Cross-Device"],
+      title: "OW Recorder – Egocentric Video Recording App",
+      role: "Objectways Technologies | Mar 2026 – Aug 2026",
+      tech: ["Data Capture Testing", "Session Management", "Cross-Device", "Jira", "Regression"],
       points: [
-        "Performed functional and regression testing on the OW Recorder app used for egocentric robotic training data collection; validated recording workflows, data capture accuracy, and session management.",
-        "Tested app behavior across devices and environments; reported and tracked defects in JIRA and verified fixes through structured re-testing cycles."
+        "Tested recording workflows, data capture accuracy, and session management across devices and environments.",
+        "Reported defects in Jira and verified fixes through structured retesting cycles."
       ]
     },
     {
-      title: "Objectways Website Testing",
-      role: "Objectways Technologies | Mar 2024 – Present",
-      tech: ["UI/UX Testing", "Cross-Browser Testing", "Content Consistency", "Responsive Web Design"],
+      title: "Objectways, ChartApps and Liceum Website Testing",
+      role: "Objectways Technologies | Jun 2026 – Aug 2026",
+      tech: ["UI/UX Testing", "Cross-Browser Testing", "Responsive Design", "Content Accuracy"],
       points: [
-        "Conducted UI/UX, content consistency, and cross-browser testing on the Objectways company website; validated navigation flows, page responsiveness, and rendering across Chromium, Firefox, and WebKit.",
-        "Identified and reported layout inconsistencies and broken links; verified content accuracy and ensured brand consistency across all pages."
+        "Tested navigation, responsiveness, content accuracy, and cross-browser rendering; reported layout issues and broken links."
       ]
     },
     {
       title: "Plasma Donor Web Application",
       role: "Karpagam Institute of Technology | 2022",
-      tech: ["HTML/CSS/JS", "Python", "IBM Cloud", "Testing"],
+      tech: ["HTML5", "CSS3", "JavaScript", "Python", "IBM Cloud"],
       points: [
-        "Built and tested a donation management web app using HTML, CSS, JavaScript, Python, and IBM Cloud; authored test cases for form validation and cloud integration."
+        "Built and tested a donation management web app using HTML, CSS, JavaScript, Python, and IBM Cloud; authored test cases for form validation."
       ]
     },
     {
       title: "Rescue Team Health Monitoring System",
       role: "Smart India Hackathon Finalist | 2022",
-      tech: ["LoRa", "IoT", "Real-Time Dashboard", "E2E Testing"],
+      tech: ["LoRa", "Real-Time Dashboard", "E2E Testing", "IoT"],
       points: [
-        "Designed a LoRa-based health and location monitoring prototype; contributed to E2E testing of the real-time web and mobile dashboard."
+        "Designed a LoRa-based health and location monitoring prototype and contributed to end-to-end testing of the real-time web and mobile dashboard."
       ]
     }
   ];
@@ -68,7 +67,7 @@ export default function Projects() {
           <div key={idx} className="glass p-8 rounded-2xl border border-gray-800 hover:border-teal-500/40 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(20,184,166,0.15)] group">
             <h3 className="text-2xl font-bold text-white mb-1 group-hover:text-teal-300 transition-colors">{project.title}</h3>
             <div className="text-teal-400/80 text-sm font-semibold mb-4">{project.role}</div>
-            
+
             <div className="flex flex-wrap gap-2 mb-6">
               {project.tech.map((t, i) => (
                 <span key={i} className="text-xs font-semibold px-2.5 py-1 rounded-md bg-teal-500/10 text-teal-300 border border-teal-500/20 group-hover:bg-teal-500/20 transition-colors">

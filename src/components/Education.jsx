@@ -1,11 +1,10 @@
 export default function Education() {
   const certifications = [
+    "AI Orchestrator Workshop – Prompt Engineering, AI Agents & Workflow Automation (Outskill, 2026)",
     "Salesforce Developer Catalyst Plus – Apex, LWC, CRM Configuration & Best Practices (Cognizant, 2023)",
-    "Cognizant ReCogNurize 2.0 – Salesforce Shaolin Certification (2022)",
-    "Cybersecurity Analyst Job Simulation – TCS & Forage (2024)",
+    "Cognizant ReCogNurize 2.0 – Salesforce Shaolin Certification (Cognizant, 2023)",
     "JavaScript Algorithms and Data Structures – freeCodeCamp (2021)",
     "Responsive Web Design – freeCodeCamp (2021)",
-    "Cybersecurity Essentials – Cisco Networking Academy (2021)",
     "Finalist – Smart India Hackathon 2022",
     "Participant – Google Developer Group Cloud Community Day, Coimbatore (2022)"
   ];
@@ -20,11 +19,11 @@ export default function Education() {
               <span className="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-purple-500 rounded transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
             </h2>
           </div>
-          
+
           <div className="space-y-6">
             <div className="glass p-8 rounded-2xl border border-gray-800 relative overflow-hidden group hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(59,130,246,0.15)] transition-all duration-300 cursor-default">
               <div className="absolute top-0 left-0 w-1.5 h-full bg-gradient-to-b from-blue-400 to-purple-600"></div>
-              
+
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 mb-6">
                 <div>
                   <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors">B.E. – Electronics & Communication Engineering</h3>
@@ -35,7 +34,7 @@ export default function Education() {
                   <div className="text-sm text-gray-500 block">Coimbatore, Tamil Nadu</div>
                 </div>
               </div>
-              
+
               <div className="inline-block px-4 py-1.5 bg-green-500/10 text-green-400 rounded-lg text-sm font-bold border border-green-500/20 shadow-[0_0_10px_rgba(34,197,94,0.1)]">
                 CGPA: 7.54
               </div>
@@ -44,13 +43,13 @@ export default function Education() {
         </div>
 
         <div>
-           <div className="mb-10">
+          <div className="mb-10">
             <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500 mb-4 inline-block relative group cursor-default">
               Certifications & Achievements
               <span className="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-purple-400 to-pink-500 rounded transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
             </h2>
           </div>
-          
+
           <ul className="space-y-3 relative before:absolute before:inset-0 before:ml-[11px] before:-translate-x-px before:h-full before:w-[2px] before:bg-gradient-to-b before:from-purple-500/50 before:via-pink-500/30 before:to-transparent">
             {certifications.map((cert, idx) => (
               <li key={idx} className="relative flex items-center pl-8 group">
