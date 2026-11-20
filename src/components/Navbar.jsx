@@ -312,13 +312,13 @@ export default function Navbar() {
             </svg>
           </a>
 
-          {/* "Let's Connect" CTA Button */}
+          {/* "Let's Connect" CTA Button (Desktop & Tablet; on small mobile screens it lives inside the hamburger menu for a spacious, clean bar) */}
           <motion.a
             href="#contact"
             onClick={(e) => handleNavClick(e, '#contact', 'contact')}
             whileHover={prefersReducedMotion ? {} : { scale: 1.03 }}
             whileTap={prefersReducedMotion ? {} : { scale: 0.97 }}
-            className="group relative inline-flex items-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 rounded-full text-xs sm:text-sm font-semibold text-white overflow-hidden shadow-[0_0_20px_rgba(56,189,248,0.3)] hover:shadow-[0_0_28px_rgba(56,189,248,0.5)] transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400"
+            className="hidden sm:inline-flex group relative items-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 rounded-full text-xs sm:text-sm font-semibold text-white overflow-hidden shadow-[0_0_20px_rgba(56,189,248,0.3)] hover:shadow-[0_0_28px_rgba(56,189,248,0.5)] transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400"
           >
             <span className="absolute inset-0 bg-gradient-to-r from-sky-500 via-blue-600 to-violet-600 transition-all duration-300 group-hover:brightness-110" />
             <span className="absolute inset-0 bg-[linear-gradient(110deg,transparent,rgba(255,255,255,0.2),transparent)] -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out" />

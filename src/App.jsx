@@ -38,7 +38,7 @@ function App() {
       
       <Navbar />
       
-      <main className="relative z-10 flex flex-col items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24 pb-12 gap-10 md:gap-20 w-full">
+      <main className="relative z-10 flex flex-col items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 sm:pt-28 md:pt-32 pb-12 gap-10 md:gap-20 w-full">
         <Hero />
         
         <div id="experience" className="w-full scroll-mt-28">
