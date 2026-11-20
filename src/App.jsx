@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/react'
-import Header from './components/Header'
+import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Experience from './components/Experience'
 import Skills from './components/Skills'
@@ -36,36 +36,36 @@ function App() {
       <div className="fixed top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-brand-primary/10 blur-[100px] pointer-events-none z-0" />
       <div className="fixed bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-brand-secondary/10 blur-[100px] pointer-events-none z-0" />
       
-      <Header />
+      <Navbar />
       
-      <main className="relative z-10 flex flex-col items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 md:pt-20 pb-12 gap-8 md:gap-20 w-full">
+      <main className="relative z-10 flex flex-col items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24 pb-12 gap-10 md:gap-20 w-full">
         <Hero />
         
-        <div id="experience" className="w-full">
+        <div id="experience" className="w-full scroll-mt-28">
           <ScrollReveal style="fade-up">
             <Experience />
           </ScrollReveal>
         </div>
         
-        <div id="skills" className="w-full">
+        <div id="skills" className="w-full scroll-mt-28">
           <ScrollReveal style="scale">
             <Skills />
           </ScrollReveal>
         </div>
         
-        <div id="projects" className="w-full">
+        <div id="projects" className="w-full scroll-mt-28">
           <ScrollReveal style="fade-left">
             <Projects />
           </ScrollReveal>
         </div>
         
-        <div id="education" className="w-full">
+        <div id="education" className="w-full scroll-mt-28">
           <ScrollReveal style="fade-right">
             <Education />
           </ScrollReveal>
         </div>
 
-        <div id="contact" className="w-full">
+        <div id="contact" className="w-full scroll-mt-28">
           <ScrollReveal style="fade-up">
             <Contact />
           </ScrollReveal>
