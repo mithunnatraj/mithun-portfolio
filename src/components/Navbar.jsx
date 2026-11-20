@@ -12,8 +12,8 @@ const NAV_LINKS = [
 
 const ROTATING_TITLES = [
   'QA Engineer',
-  'Manual & Automation QA',
-  'Playwright & API Testing',
+  'Functional & Regression QA',
+  'Web App & API Testing',
   'Open to Opportunities',
 ];
 
