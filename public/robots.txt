@@ -1,0 +1,19 @@
+# Allow all web search engines and recruiter bots to crawl and index all pages
+User-agent: *
+Allow: /
+
+# Googlebot, Bingbot, LinkedInBot, Applebot, Twitterbot
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# Sitemap URL
+Sitemap: https://mithunkumar-qa.vercel.app/sitemap.xml
